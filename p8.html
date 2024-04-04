@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>7) delete(operator)</h2>
+        <p>Array elements can be deleted using the javascript operator delete...</p>
+        <p>using delete leaves undefined holedin the array.</p>
+        <p>using delete operator it will deletes the value but not theat index if u are printing
+            the value of deleted index that is undefined and it is not changes any length of the array..
+        </p>
+    </center>
+  <p><b>SYNTAX :</b></p>
+  <pre>
+    delete array[index]
+  </pre>
+ <hr>
+    <script>
+        let bikes = ['yamaha', 'Bajaj', 'Honda', 'TVS']
+        document.write(`<h1>before delete ${bikes}</h1>`)
+        document.write(`<h1>length ${bikes.length}</h1>`)
+
+        document.write(`<h1>Delete array ${delete bikes[2]}</h1>`)
+        document.write(`<h1>The value of the deleted index ${bikes[2]}</h1>`)
+
+        document.write(`<h1>after delete ${bikes}</h1>`)
+        document.write(`<h1>length ${bikes.length}</h1>`)
+
+   for(let i=0; i<bikes.length; i++){
+    document.write(`<h1>${bikes[i]}</h1>`)
+   }
+    </script>
+</body>
+</html>

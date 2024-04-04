@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>9) sort()</h2>
+        <p>The sort() sorts the elements of an array and overwrites the original array.</p>
+        <p>Sorts the elements as strings in alphabetical and ascending order.</p>
+    </center>
+
+    <hr>
+    <p><b>SYNTAX : </b></p>
+
+    <pre>
+        array.sort(compareFunction);
+    </pre>
+
+    <hr>
+    <script>
+        //we storing multiple things in array we call object.Here we can store numbers string
+        let array1 = [99,32,23,43,53]
+        let str = ['Zebra', 'Year', 'Van', 'Apple']
+
+        document.write(`<p>Default array result : ${array1}</p>`)
+        array1.sort();
+        document.write(`<p>after array sort: ${array1}</p>`)
+
+        //string sorting
+        document.write(`<p>Default array result: ${str}</p>`)
+ str.sort();
+        document.write(`<p>after array sort: ${str}</p>`)
+    </script>
+</body>
+</html>

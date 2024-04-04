@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <center>
+        <h2>11) slice():</h2>
+        <p>The slice() method slices out a piece from an array </p>
+    </center>
+  
+    <hr>
+
+    <p><b>SYNTAX : </b></p>
+
+    <pre>
+        array.slice(start,end)
+    </pre>
+
+    <hr>
+
+<script>
+        let array = [1,2,3,4,5,6];
+        document.write(`<p>Before slice(): ${array}</p>`)
+
+        let newArray = array.slice(1,4)
+        document.write(`<p>after slice(): ${array}</p>`)
+        document.write(`<p>after slice(): ${newArray}</p>`)
+</script>
+</body>
+</html>

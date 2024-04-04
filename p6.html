@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>5) shift</h2>
+        <p>The shift() removes first element and return it.</p>
+    </center>
+    <hr>
+    <p><b>SYNTAX : </b></p>
+
+    <pre>
+        array.shift();
+    </pre>
+ 
+    <script>
+        let bikes = ['Yamaha', 'honda', 'TVS', 'Bajaj']
+
+    document.write(`<h1>Before array.shift() : ${bikes}</h1>`)
+    document.write(`<h1> array.shift() : ${bikes.shift()}</h1>`)
+    document.write(`<h1>after array.shift() : ${bikes}</h1>`)
+
+
+    let num = [1,2,3,4,5,6,7]
+    document.write(`<h1>Before array.shift() : ${num}</h1>`)
+    document.write(`<h1> array.shift() : ${num.shift()}</h1>`)
+    document.write(`<h1>after array.shift() : ${num}</h1>`)
+    document.write(`<h1> array.shift() : ${num.shift()}</h1>`)
+    document.write(`<h1>after array.shift() : ${num}</h1>`)
+
+for(let i=0; i<bikes.length; i++){
+    document.write(`<h1>${bikes[i]}</h1>`)
+}
+for(let i=0; i<num.length; i++){
+    document.write(`<h1>${num[i]}</h1>`)
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bikes = new Array();
+        bikes[0] = 'honda'
+        bikes[1] = 'Bajaj'
+        bikes[2] = 'Hero'
+        console.log(bikes)
+
+        document.write(`<h1>${bikes}</h1>`)
+        document.write(`<h1>${bikes.join(" - ")}</h1>`)
+        document.write(`<h1>${bikes.pop()}</h1>`)
+        document.write(`<h1>${bikes.push('hello')}</h1>`)
+        document.write(`<h1>${bikes}</h1>`)
+        document.write(`<h1>${delete bikes[1]}</h1>`)
+        document.write(`<h1>${bikes}</h1>`)
+   </script>
+</body>
+</html>

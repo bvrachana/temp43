@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>switch</h1>
+    </center>
+    <button onclick="display()">click</button>
+    <script>
+        function display(){
+            var day = prompt('enter the number')
+            var key = Number(day);
+            switch(key){
+                case 1: 
+                document.write(`<h1>sunday</h1>`)
+                break;
+
+                case 2: 
+                document.write(`<h1>tuesday</h1>`)
+                break;
+
+                default:
+                document.write(`<h1>enter the input</h1>`)
+            }
+        }
+ 
+    </script>
+
+
+
+
+</body>
+</html>
