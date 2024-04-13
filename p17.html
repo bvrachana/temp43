@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>16) find();</h2>
+        <p>The find method returns the first element in the provided array that satisfies the provided testing function</p>
+        <p>If no values satisfy the testing function, undefined is returned</p>
+    </center>
+ 
+    <hr>
+    <!-- find method is used to find particular element with condition -->
+    <p><b>SYNTAX : </b></p>
+
+    <pre>array.find((element)=>{});</pre>
+
+    <hr>
+    <script>
+        let array = [5,12,8,140,44]
+
+
+        //example1
+
+        const found = array.find((item)=>item>10);
+
+        //example2
+        const newItem = array.find((item)=>{
+            if(item == 140){
+                return "140 is present in array";
+            }
+        })
+        console.log(newItem);
+        console.log(found);
+    </script>
+</body>
+</html>
