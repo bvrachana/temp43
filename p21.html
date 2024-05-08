@@ -46,6 +46,25 @@
             document.write(`<h1>no the given stack price is not satisfied with our price</h1>`)
 
         }
+        let array1 = [1,30,39,29,19,13]; //[t,t,t,t,t,t] = true
+       
+        ///own method 
+         
+        function ownEvery(){
+            var check = true;
+            for(let i=0; i<array1.length; i++){
+                if(array1[i]<element){
+               check =true;
+                }else{
+                 return false;
+                }
+            }
+            return true;
+        }
+        console.log(ownEvery(10)); //false
+        console.log(ownEvery(40)); //true
+
+
     </script>
 </body>
 </html>

@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card{
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 0px 5px #0c0c0c;
+           
+        }
+        #products{
+            display: flex;
+            gap: 30px;
+        }
+        img{
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
     <center>
@@ -20,19 +36,85 @@
     </pre>
 
     <hr>
+    <div id="products"></div>
     <script>
         //we storing multiple things in array we call object.Here we can store numbers string
-        let array1 = [99,32,23,43,53]
-        let str = ['Zebra', 'Year', 'Van', 'Apple']
+//         let array1 = [99,32,23,43,53]
+//         let str = ['Zebra', 'Year', 'Van', 'Apple']
 
-        document.write(`<p>Default array result : ${array1}</p>`)
-        array1.sort();
-        document.write(`<p>after array sort: ${array1}</p>`)
+//         document.write(`<p>Default array result : ${array1}</p>`)
+//         array1.sort();
+//         document.write(`<p>after array sort: ${array1}</p>`)
 
-        //string sorting
-        document.write(`<p>Default array result: ${str}</p>`)
- str.sort();
-        document.write(`<p>after array sort: ${str}</p>`)
+//         //string sorting
+//         document.write(`<p>Default array result: ${str}</p>`)
+//  str.sort();
+//         document.write(`<p>after array sort: ${str}</p>`)
+ 
+        let allProducts = [
+            {
+                img:"https://tse2.mm.bing.net/th?id=OIP.G37tgeQqSNt7v2oPfj9ltQHaE7&pid=Api&P=0&h=180",
+                productName:"testProduct",
+                Price:450
+            },
+            {
+                img:"https://tse2.mm.bing.net/th?id=OIP.G37tgeQqSNt7v2oPfj9ltQHaE7&pid=Api&P=0&h=180",
+                productName:"testProduct",
+                Price:500
+            },
+            {
+                img:"https://tse2.mm.bing.net/th?id=OIP.G37tgeQqSNt7v2oPfj9ltQHaE7&pid=Api&P=0&h=180",
+                productName:"testProduct",
+                Price:100
+            },
+            {
+                img:"https://tse2.mm.bing.net/th?id=OIP.G37tgeQqSNt7v2oPfj9ltQHaE7&pid=Api&P=0&h=180",
+                productName:"testProduct",
+                Price:70
+            },
+            {
+                img:"https://tse2.mm.bing.net/th?id=OIP.G37tgeQqSNt7v2oPfj9ltQHaE7&pid=Api&P=0&h=180",
+                productName:"testProduct",
+                Price:60
+            },
+        ]
+ let result = document.getElementById('products');
+
+ function displayproducts(){
+    allProducts.map((item,index)=>{
+    result.innerHTML +=`
+    <div class="card">
+        <h2>${item.productName}</h2>
+        <h1>&#8377;${item.Price}/-</h1>
+        <img src="${item.img} alt="">
+        </div>
+        `
+ })
+ }
+ displayproducts()
+console.log(allProducts)
+
+ function displayinOrder1(){
+    allProducts.sort((a,b)=>a.Price - b.Price)
+    console.log(allProducts);
+    
+    result.innerHTML =""
+
+        displayproducts()
+        
+ }
+ function displayinOrder2(){
+    allProducts.sort((a,b)=>b.Price - a.Price)
+    console.log(allProducts);
+    result.innerHTML =""
+    
+    displayproducts()
+ }
+
+
     </script>
+    <button onclick="displayinOrder1()()">display price low to high</button>
+    <button onclick="displayinOrder2()">display price high to low</button>
+
 </body>
 </html>
